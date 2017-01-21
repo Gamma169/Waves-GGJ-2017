@@ -116,6 +116,6 @@ public class WaveForm : MonoBehaviour {
 
 	private float SawWave(float t) {
 		//if ()
-
+		yield return null;
 	}
 }
