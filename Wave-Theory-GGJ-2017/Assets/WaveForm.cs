@@ -69,7 +69,7 @@ public class WaveForm : MonoBehaviour {
 			}
 			else if (type == 2) {
 				
-			
+				pointPositions[i].transform.localPosition = new Vector3(0, amplitude[i] * SawWave(radiusWavesTime[i]), pointPositions[i].transform.localPosition.z);
 			}
 
 		}
@@ -115,7 +115,13 @@ public class WaveForm : MonoBehaviour {
 
 
 	private float SawWave(float t) {
-		//if ()
-		yield return null;
+		if (t > 1)
+			t = t - Mathf.Floor(t);
+		if (t < 0.25f)
+			return t * 4f;
+		else if (t<0.75f)
+			return 2 - 4*t;
+		else
+			return -4 + 4*t;
 	}
 }
