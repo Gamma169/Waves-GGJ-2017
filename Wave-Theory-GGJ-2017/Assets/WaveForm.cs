@@ -48,7 +48,7 @@ public class WaveForm : MonoBehaviour {
 			//frequency[i] = 0.5f * i / numPoints;
 			//amplitude[i] = 1f * i / numPoints;
 
-			if (i > 0)
+			if (i > 0 && (amplitude[i] > amplitude[i-1]))
 				amplitude[i] = (amplitude[i] + amplitude[i - 1]) / 2f;
 
 
@@ -85,8 +85,8 @@ public class WaveForm : MonoBehaviour {
 		for (int i = 1; i < numPoints; i++) {
 			radiusWavesTime[i] = i / numPoints;
 			amplitude[i] = 1;
-			//yield return new WaitForSeconds(1f / numPoints);
-			yield return null;
+			yield return new WaitForSeconds(1f / numPoints);
+			//yield return null;
 		}
 		startingWave = false;
 	}
