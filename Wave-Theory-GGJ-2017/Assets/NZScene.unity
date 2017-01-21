@@ -300,7 +300,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1585567378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.0704825}
+  m_LocalPosition: {x: 0, y: 3.04, z: 2.0704825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -317,9 +317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5288d6fcdad612c4591e52c261c90501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  singleFrequency: 0.5
-  singleAmplitude: 1
   wavePoint: {fileID: 1243560281468884, guid: 1da89fb57de53904296d7d713a75f0cf, type: 2}
+  type: 1
+  singleFrequency: 2
 --- !u!1 &1668330943
 GameObject:
   m_ObjectHideFlags: 0
