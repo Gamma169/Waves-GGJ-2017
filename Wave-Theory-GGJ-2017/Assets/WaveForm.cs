@@ -28,6 +28,7 @@ public class WaveForm : MonoBehaviour {
 		frequency = new float[numPoints];
 		for (int i = 0; i < numPoints; i++) {
 			GameObject point = (GameObject)Instantiate(wavePoint, new Vector3(0, 1, i * 0.3f), Quaternion.identity);
+			point.transform.parent = this.transform;
 			pointPositions[i] = point;
 			radiusWavesTime[i] = (1 / (float)numPoints) * i;
 			frequency[i] = singleFrequency;
@@ -52,7 +53,7 @@ public class WaveForm : MonoBehaviour {
 				amplitude[i] = (amplitude[i] + amplitude[i - 1]) / 2f;
 
 
-			pointPositions[i].transform.position = new Vector3(0, 1 + amplitude[i] * Mathf.Sin(radiusWavesTime[i] * 2 * Mathf.PI), pointPositions[i].transform.position.z);
+			pointPositions[i].transform.localPosition = new Vector3(0, 1 + amplitude[i] * Mathf.Sin(radiusWavesTime[i] * 2 * Mathf.PI), pointPositions[i].transform.localPosition.z);
 		}
 
 
@@ -68,6 +69,9 @@ public class WaveForm : MonoBehaviour {
 			amplitude[0] = 1;
 		}
 		else { 
+			StopCoroutine("StartWave");
+			startingWave = false;
+
 			if (amplitude[0] > 0)
 				amplitude[0] -= 0.05f;
 			if (amplitude[0] <= 0)
