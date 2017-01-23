@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 711eaa550944c424783a81d13a56e70f
+timeCreated: 1485108226
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - originalMaterial: {fileID: 2100000, guid: 3afc85c9d307f284aae8ba98b8ec6dc6, type: 2}
+  - collidedMaterial: {fileID: 2100000, guid: b908277860f91ba479e94826ef6264a1, type: 2}
+  - triggerHeldMaterial: {fileID: 2100000, guid: b908277860f91ba479e94826ef6264a1,
+      type: 2}
+  - waveForm: {instanceID: 0}
+  - rail: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

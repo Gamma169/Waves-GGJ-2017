@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1435572662759052}
+  m_IsPrefabParent: 1
+--- !u!1 &1435572662759052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4553088452149450}
+  - component: {fileID: 114695288050020570}
+  m_Layer: 0
+  m_Name: EnemyMaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4553088452149450
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435572662759052}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -8.27, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114695288050020570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435572662759052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72909377c76ef4a41a7e5f0aab1c6434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _state: 0
+  enemy:
+  - {fileID: 1077150510356850, guid: ad95a819823377047b72a7771004d2eb, type: 2}
+  - {fileID: 1077150510356850, guid: 00597ea5fb08e0141b62f09ebecb3cd1, type: 2}
+  - {fileID: 1220116858485244, guid: eac8cad2b14fe0c46821a412516cf075, type: 2}
+  - {fileID: 1220116858485244, guid: 04ad04c7664072a4ba533b44df068ac5, type: 2}
+  - {fileID: 1776141662342356, guid: d451cd43c56f6f649b1f86b2583e8cf3, type: 2}
+  - {fileID: 1776141662342356, guid: 700f36e80632430408efa738e2b421ab, type: 2}
+  - {fileID: 1794871107968410, guid: 0c0b0226c5107e742b10f8375dd98948, type: 2}
+  - {fileID: 1794871107968410, guid: 6cc81b4923df5974dabc058940766658, type: 2}
